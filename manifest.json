@@ -1,0 +1,348 @@
+{
+  "schema": 1,
+  "updated": "2026-11-16T16:35:00Z",
+  "base_url": "https://autocorrect.mostlime.hackclub.app/autocorrect-android/",
+  "base_urls": [
+    "https://autocorrect.mostlime.hackclub.app/autocorrect-android/"
+  ],
+  "default": "m2s_int4",
+  "battery_saver": "block4",
+  "models": [
+    {
+      "id": "m2s_int4",
+      "label": "m2 106M int4 (Preview)",
+      "format": "ort",
+      "base_urls": [
+        "https://huggingface.co/MostLime/keylime-m2-preview/resolve/main/",
+        "https://autocorrect.mostlime.hackclub.app/autocorrect-android/"
+      ],
+      "graph": {
+        "file": "m2s.step.int4m.ort",
+        "size": 78969984,
+        "sha256": "28e79b14b67c25659a41ce6ac84fd498bce530310eb7ec6bff116ad2e003fe39"
+      },
+      "vocab": {
+        "file": "vocab_m2.json",
+        "size": 695095,
+        "sha256": "f328549e080df02ab6a57e3ecf87dc8dd6470b286516ba00f67a86f383d1c77a"
+      },
+      "session_config": {},
+      "meta": {
+        "n_kv_heads": 2,
+        "head_dim": 64,
+        "conv_kernel": 7,
+        "d_model": 640,
+        "state_names": [
+          "k0",
+          "v0",
+          "k1",
+          "v1",
+          "k2",
+          "v2",
+          "k3",
+          "v3",
+          "k4",
+          "v4",
+          "k5",
+          "v5",
+          "c0",
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7",
+          "c8",
+          "c9"
+        ],
+        "vocab_size": 32768,
+        "params": 106315648
+      },
+      "params": {
+        "lam": 1.25,
+        "bias": 0,
+        "margin": 0,
+        "lam_r": 1.25,
+        "pen": {
+          "split": 2,
+          "space": 3,
+          "contr": 1,
+          "contr_rw": 0,
+          "gdrop": 1,
+          "merge": 4
+        },
+        "pen_formal": {
+          "split": 2,
+          "space": 3,
+          "contr": -6,
+          "contr_rw": 2,
+          "gdrop": 6,
+          "merge": 4,
+          "caps": -2,
+          "punct": 3,
+          "comma": 0
+        }
+      },
+      "params_source": "m2_100m_block4_9b_style/eval_qat1_style-none_gold-standard.json (params pinned to m2)",
+      "supports_style": true,
+      "style_tokens": {
+        "casual": 249,
+        "standard": 250,
+        "formal": 251
+      },
+      "style_params": {
+        "casual": {
+          "lam": 1.25,
+          "bias": 0,
+          "margin": 0,
+          "lam_r": 1.25,
+          "pen": {
+            "split": 2,
+            "space": 3,
+            "contr": 1,
+            "contr_rw": 0,
+            "gdrop": 1,
+            "merge": 4
+          },
+          "pen_formal": {
+            "split": 2,
+            "space": 3,
+            "contr": -6,
+            "contr_rw": 2,
+            "gdrop": 6,
+            "merge": 4,
+            "caps": -2,
+            "punct": 3,
+            "comma": 0
+          }
+        },
+        "standard": {
+          "lam": 1.25,
+          "bias": 0,
+          "margin": 0,
+          "lam_r": 1.25,
+          "pen": {
+            "split": 2,
+            "space": 3,
+            "contr": 1,
+            "contr_rw": 0,
+            "gdrop": 1,
+            "merge": 4
+          },
+          "pen_formal": {
+            "split": 2,
+            "space": 3,
+            "contr": -6,
+            "contr_rw": 2,
+            "gdrop": 6,
+            "merge": 4,
+            "caps": -2,
+            "punct": 3,
+            "comma": 0
+          }
+        },
+        "formal": {
+          "lam": 1.25,
+          "bias": 0,
+          "margin": 0,
+          "lam_r": 1.25,
+          "pen": {
+            "split": 2,
+            "space": 3,
+            "contr": 1,
+            "contr_rw": 0,
+            "gdrop": 1,
+            "merge": 4
+          },
+          "pen_formal": {
+            "split": 2,
+            "space": 3,
+            "contr": -6,
+            "contr_rw": 2,
+            "gdrop": 6,
+            "merge": 4,
+            "caps": -2,
+            "punct": 3,
+            "comma": 0
+          }
+        }
+      },
+      "graph_tree": {
+        "file": "m2s.step.int4t.ort",
+        "size": 79105008,
+        "sha256": "8a97ae16e68944f78e180c180dd3f18adf41b56dcadb21c4863e8e75b03c686f"
+      }
+    },
+    {
+      "id": "block4",
+      "label": "m1 34M int8 (Preview)",
+      "format": "ort",
+      "base_urls": [
+        "https://huggingface.co/MostLime/keylime-m1-preview/resolve/main/",
+        "https://autocorrect.mostlime.hackclub.app/autocorrect-android/"
+      ],
+      "graph": {
+        "file": "lm_block4.step.int8.ort",
+        "size": 42312320,
+        "sha256": "5d10b91d18cfa4f5174cbf0fca7987ccb5dc2316334b2cdcae01862adede2533"
+      },
+      "vocab": {
+        "file": "vocab.json",
+        "size": 340209,
+        "sha256": "70ad9ddc0b46857a66de5f14218103e26cf18728bc7bdec2388c56255cbd22b3"
+      },
+      "session_config": {},
+      "meta": {
+        "n_kv_heads": 2,
+        "head_dim": 64,
+        "conv_kernel": 7,
+        "d_model": 384,
+        "state_names": [
+          "k0",
+          "v0",
+          "k1",
+          "v1",
+          "k2",
+          "v2",
+          "k3",
+          "v3",
+          "k4",
+          "v4",
+          "c0",
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6",
+          "c7",
+          "c8"
+        ],
+        "vocab_size": 16384,
+        "params": 34279552
+      },
+      "params": {
+        "lam": 1.0,
+        "bias": 0,
+        "margin": 0,
+        "lam_r": 1.4,
+        "pen": {
+          "split": 2,
+          "space": 3,
+          "contr": 1,
+          "contr_rw": 0,
+          "gdrop": 1,
+          "merge": 4
+        },
+        "pen_formal": {
+          "split": 2,
+          "space": 3,
+          "contr": -6,
+          "contr_rw": 2,
+          "gdrop": 6,
+          "merge": 4,
+          "caps": -2,
+          "punct": 3,
+          "comma": 0
+        }
+      },
+      "params_source": "lm_block4_3b/eval_qat0.json",
+      "supports_style": false,
+      "style_tokens": {},
+      "style_params": {},
+      "graph_tree": {
+        "file": "lm_block4.step.int8t.ort",
+        "size": 42342088,
+        "sha256": "12095b069d372b4814c7ab37ad405a9b267841c4e597e7e5783f9f2f863b3e69"
+      }
+    }
+  ],
+  "models_v2": [
+    {
+      "id": "m3",
+      "type": "m3dict",
+      "label": "m3 62M int4 (Preview)",
+      "replaces": "block4",
+      "format": "onnx",
+      "base_urls": [
+        "https://huggingface.co/MostLime/keylime-m3-preview/resolve/main/"
+      ],
+      "files": {
+        "encoder": {
+          "file": "m3.encoder.int4.onnx",
+          "size": 23968360,
+          "sha256": "fe57a05e25ef38639ff0ae88930f5cd79004a7d7f5c8538515fb641a04a44085"
+        },
+        "decoder": {
+          "file": "m3.decoder.int4.onnx",
+          "size": 26871564,
+          "sha256": "05c2ba7c3b54bba2499522efc08a1d8cd02b2bf5d58cfa1662a029aeff89a1f8"
+        },
+        "vocab": {
+          "file": "vocab_m3.json",
+          "size": 695095,
+          "sha256": "f328549e080df02ab6a57e3ecf87dc8dd6470b286516ba00f67a86f383d1c77a"
+        },
+        "lexicon": {
+          "file": "m3_lexicon.tsv",
+          "size": 1212343,
+          "sha256": "a7437026bf5d89ed689e800174953c0872920b13a615627001ce38f354d54924"
+        },
+        "symspell": {
+          "file": "m3_symspell.bin",
+          "size": 26841264,
+          "sha256": "fb489db418bad113c02ad239c1c584e3cf2c3d77465639365345e3d4e8942386"
+        },
+        "ngram": {
+          "file": "m3_ngram.bin",
+          "size": 24097652,
+          "sha256": "0c2329ec0a7884d6a8a4a85899e27adf077bc5b3187c5d2e654be9cc5aa6665c"
+        }
+      },
+      "m3": {
+        "n_kv_heads": 2,
+        "head_dim": 64,
+        "conv_kernel": 7,
+        "d_model": 512,
+        "vocab_size": 32768,
+        "params": 61718400,
+        "style_ids": {
+          "casual": 256,
+          "standard": 257,
+          "formal": 258
+        },
+        "eos": 2,
+        "max_src": 384,
+        "max_tgt": 112
+      },
+      "decoder": {
+        "top_k": 8,
+        "tau_split": 4.0,
+        "plan_k": 8,
+        "rare_rank": 10000,
+        "lp_oov": -16.0,
+        "prior_w": 0.5,
+        "max_hits": 4000,
+        "qd3": 7,
+        "short": 2,
+        "bag_n": 300,
+        "bag_min": 6
+      },
+      "params": {
+        "k": 3,
+        "rare": 10000,
+        "lowconf": -1.0,
+        "a": 0.5,
+        "b": 0.5,
+        "d": 0.0,
+        "c_name": 2.0,
+        "c_real": 4.0,
+        "c_rare": 8.0,
+        "th_auto": -5.955550000000001,
+        "th_sugg": -8.14395
+      },
+      "supports_style": true
+    }
+  ]
+}
